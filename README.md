@@ -1,2 +1,1 @@
-# utsavkumar.tech
-This is my personal protfolio website.
+## This is my personal website
