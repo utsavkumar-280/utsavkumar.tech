@@ -18,7 +18,7 @@ const ButtonToggler = () => {
 
 	return (
 		<button className="mx-5" onClick={themeHandler}>
-			{resolvedTheme === "dark" ? <MoonIcon /> : <SunIcon />}
+			{resolvedTheme === "dark" ? <SunIcon /> : <MoonIcon />}
 		</button>
 	);
 };
