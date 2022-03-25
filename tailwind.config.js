@@ -17,6 +17,7 @@ module.exports = {
 				themeBgText: "var(--themeBgText)",
 				headPrimary: "var(--head-primary)",
 				navLink: "var(--navLink)",
+				spotifyBorder: "var(--spotifyBorder)",
 			},
 		},
 		screens: {

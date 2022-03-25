@@ -3,16 +3,18 @@
 :root,
 html[data-theme="light"] {
 	--themeBg: #ffffff;
-	--themeBgText: rgba(240, 240, 240, 0.678);
+	--themeBgText: rgba(240, 240, 240, 0.4);
 	--head-primary: #000000;
 	--navLink: #334155;
+	--spotifyBorder: rgba(51, 65, 85, 0.288);
 }
 
 html[data-theme="dark"] {
 	--themeBg: #0a0014;
-	--themeBgText: #0e001de8;
+	--themeBgText: rgba(14, 0, 29, 0.61);
 	--head-primary: #ffffff;
 	--navLink: #94a3b8;
+	--spotifyBorder: #7a869781;
 }
 
 @tailwind base;
@@ -44,4 +46,40 @@ text-horizontal {
 
 text-vertical {
 	writing-mode: vertical-lr;
+}
+
+.heroText {
+	display: inline-block;
+	text-shadow: 0.03em 0.03em 0 var(--themeBg);
+	position: relative;
+}
+.heroText:after {
+	content: "Utsav Kumar";
+	position: absolute;
+	top: 0.06em;
+	left: 0.06em;
+	z-index: -1;
+	white-space: pre;
+	text-shadow: none;
+	background-image: linear-gradient(
+		45deg,
+		transparent 45%,
+		var(--head-primary) 45%,
+		var(--head-primary) 55%,
+		transparent 0
+	);
+	background-size: 0.05em 0.05em;
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+
+	animation: shad-anim 30s linear infinite;
+}
+
+@keyframes shad-anim {
+	0% {
+		background-position: 0 0;
+	}
+	0% {
+		background-position: 100% -100%;
+	}
 }

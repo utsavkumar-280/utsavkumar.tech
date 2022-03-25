@@ -6,9 +6,9 @@ import ButtonToggler from "../toggleButtons/ButtonToggler";
 
 const links = [
 	{ name: "Home", to: "/", id: 1 },
-	{ name: "About", to: "/", id: 2 },
-	{ name: "Blog", to: "/", id: 3 },
-	{ name: "Contact", to: "/", id: 4 },
+	{ name: "Projects", to: "/projects", id: 2 },
+	{ name: "Blog", to: "/blog", id: 3 },
+	{ name: "About", to: "/about", id: 4 },
 ];
 
 const itemVariants = {
@@ -39,6 +39,7 @@ const sideVariants = {
 
 const MenuToggle = () => {
 	const [isOpen, cycleOpen] = useCycle(false, true);
+
 	return (
 		<motion.main>
 			<AnimatePresence>
@@ -66,10 +67,9 @@ const MenuToggle = () => {
 							exit="closed"
 							variants={sideVariants}
 						>
-							{links.map(({ name, to, id }) => (
-								<Link href={to} key={id} passHref>
+							{links.map(({ name, to }) => (
+								<Link href={to} key={name} passHref>
 									<motion.a
-										key={id}
 										href={to}
 										whileHover={{ scale: 1.05 }}
 										whileTap={{ scale: 0.995 }}

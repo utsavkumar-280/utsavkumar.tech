@@ -5,6 +5,7 @@ import { MoonIcon } from "./MoonIcon";
 
 const ButtonToggler = () => {
 	const { theme, setTheme, resolvedTheme } = useTheme();
+
 	const themeHandler = () => {
 		if (resolvedTheme === "dark") {
 			setTheme("light");
@@ -15,6 +16,11 @@ const ButtonToggler = () => {
 	};
 
 	console.log({ theme, resolvedTheme });
+
+	// const [mounted, setMounted] = useState(false);
+	// useEffect(() => setMounted(true), []);
+
+	// if (!mounted) return null;
 
 	return (
 		<button
