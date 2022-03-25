@@ -3,14 +3,14 @@
 :root,
 html[data-theme="light"] {
 	--themeBg: #ffffff;
-	--themeBgText: #f0f0f0ce;
+	--themeBgText: rgba(240, 240, 240, 0.678);
 	--head-primary: #000000;
 	--navLink: #334155;
 }
 
 html[data-theme="dark"] {
 	--themeBg: #0a0014;
-	--themeBgText: #0e001d;
+	--themeBgText: #0e001de8;
 	--head-primary: #ffffff;
 	--navLink: #94a3b8;
 }
@@ -31,6 +31,11 @@ body {
 	margin: 0;
 	font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
 		Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+}
+
+body {
+	background-color: var(--themeBg);
+	transition: background-color ease-in-out 0.25s;
 }
 
 text-horizontal {

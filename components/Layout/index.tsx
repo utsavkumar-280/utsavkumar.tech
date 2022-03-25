@@ -16,15 +16,18 @@ const Layout = ({ children }: { children: React.ReactNode }) => {
 				</div>
 				<Footer />
 			</div>
-			{/* <p
-				className=" text-9xl 2xl:text-[14rem] 3xl:text-[16rem] font-abril fixed left-[-3rem] bottom-[-1rem] whitespace-pre text-themeBgText mb-14 transition-all ease duration-[250ms]"
+			<p
+				className=" text-9xl 2xl:text-[14rem] 3xl:text-[16rem] font-abril fixed left-[-3rem] bottom-[-1rem] whitespace-pre text-themeBgText mb-14 transition-all ease-in-out duration-[10ms]"
 				aria-hidden="true"
 			>
 				Hello, Namaste.
-			</p> */}
-			<p className=" 3xl:text-[17rem] text-[16rem]  fixed [writing-mode:vertical-rl]  xl:left-[-5.5rem] lg:left-[-3.5rem] xl:bottom-[-1rem] lg:bottom-0 font-abril text-themeBgText ">
-				Projects
 			</p>
+			{/* <p
+				className=" 3xl:text-[17rem] lg:text-[16rem] md:text-[12.5rem] sm:text-[11.5rem] smest:text-[12rem] xl:left-[-5.5rem]  xl:bottom-[-1rem] lg:left-[-5.5rem] lg:bottom-0 md:left-[-4.25rem] smest:left-[-5rem] smest:bottom-[0rem]  left-[-4rem] bottom-[-1.5rem] font-abril  text-themeBgText fixed [writing-mode:vertical-rl]"
+				aria-hidden="true"
+			>
+				Projects
+			</p> */}
 		</div>
 	);
 };

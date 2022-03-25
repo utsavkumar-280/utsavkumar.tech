@@ -17,7 +17,10 @@ const ButtonToggler = () => {
 	console.log({ theme, resolvedTheme });
 
 	return (
-		<button className="mx-5" onClick={themeHandler}>
+		<button
+			className="mx-5 transition-colors ease-in-out  duration-[250ms]"
+			onClick={themeHandler}
+		>
 			{resolvedTheme === "dark" ? <SunIcon /> : <MoonIcon />}
 		</button>
 	);
