@@ -1,14 +1,15 @@
 import { AnimatePresence, motion, useCycle } from "framer-motion";
 import Link from "next/link";
+import { useRouter } from "next/router";
 
 import { MenuToggler } from "./MenuToggler";
 import ButtonToggler from "../toggleButtons/ButtonToggler";
 
 const links = [
-	{ name: "Home", to: "/", id: 1 },
-	{ name: "Projects", to: "/projects", id: 2 },
-	{ name: "Blog", to: "/blog", id: 3 },
-	{ name: "About", to: "/about", id: 4 },
+	{ name: "Home", to: "/" },
+	{ name: "Projects", to: "/projects" },
+	{ name: "Blog", to: "/blog" },
+	{ name: "About", to: "/about" },
 ];
 
 const itemVariants = {
@@ -39,6 +40,8 @@ const sideVariants = {
 
 const MenuToggle = () => {
 	const [isOpen, cycleOpen] = useCycle(false, true);
+	const { asPath } = useRouter();
+	console.log({ asPath });
 
 	return (
 		<motion.main>
@@ -74,7 +77,12 @@ const MenuToggle = () => {
 										whileHover={{ scale: 1.05 }}
 										whileTap={{ scale: 0.995 }}
 										variants={itemVariants}
-										className="text-navLink transition-colors ease-in-out  duration-[250ms] mx-3 mb-8 text-xl "
+										className={`text-navLink transition-colors ease-in-out  duration-[250ms] mx-3 mb-8  ${
+											asPath === to
+												? " text-headPrimary font-semibold text-[1.325rem] "
+												: "text-lg"
+										}`}
+										onClick={() => cycleOpen()}
 									>
 										{name}
 									</motion.a>
