@@ -28,7 +28,7 @@ export default function Spotify() {
 					? data.songUrl
 					: "https://open.spotify.com/user/31eagzgv4pvvv2b73ybwswtykyaq"
 			}
-			className=" flex items-start min-w-[256px]  space-x-1 rounded-xl border-[0.5px] border-spotifyBorder p-2 transition-shadow hover:shadow-md"
+			className=" flex items-start min-w-[256px]  space-x-1 rounded-xl border-[0.5px] border-spotifyBorder lg:my-0 my-3 p-2 transition-shadow hover:shadow-md"
 		>
 			<div className=" w-16 h-16 relative">
 				{data?.isPlaying ? (

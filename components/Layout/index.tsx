@@ -18,7 +18,7 @@ const Layout = ({ children }: { children: React.ReactNode }) => {
 	if (!mounted) return null;
 	return (
 		<div className="min-h-screen w-full flex justify-center font-poppins bg-themeBg transition-colors ease-in-out  duration-[250ms] z-0">
-			<div className="flex flex-col 2xl:w-7/12 xl:w-8/12 lg:w-9/12 md:w-10/12 sm:w-[90%] w-[92.5%] z-10">
+			<div className="flex flex-col 2xl:w-7/12 xl:w-8/12  md:w-10/12 sm:w-[90%] w-[92.5%] z-10">
 				<div className="w-full flex flex-col justify-start">
 					<Header />
 					{children}
