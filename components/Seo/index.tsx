@@ -10,7 +10,7 @@ const Seo = ({ title }: { title?: String }) => {
 		description:
 			"The online portfolio website of Utsav kumar. Showcase of my projects, blogs and web development journey.",
 		url: "https://utsavkumar.tech",
-		image: "https://utsavkumar.tech/cinema-og.png",
+		image: "https://utsavkumar.tech/favicon/ogMain.png",
 		type: "website",
 		robots: "follow, index",
 	};
@@ -29,45 +29,29 @@ const Seo = ({ title }: { title?: String }) => {
 				/>
 				<link rel="canonical" href={`${defaultMeta.url}${router.asPath}`} />
 
-				{/* Open Graph */}
 				<meta property="og:type" content={defaultMeta.type} />
 				<meta property="og:site_name" content={defaultMeta.siteName} />
 				<meta property="og:description" content={defaultMeta.description} />
 				<meta property="og:title" content={defaultMeta.title} />
 				<meta name="image" property="og:image" content={defaultMeta.image} />
-				{/* Twitter  */}
+
 				<meta name="twitter:card" content="summary_large_image" />
 				<meta name="twitter:site" content="@utsavkumar280" />
 				<meta name="twitter:title" content={defaultMeta.title} />
 				<meta name="twitter:description" content={defaultMeta.description} />
 				<meta name="twitter:image" content={defaultMeta.image} />
 
-				<link
-					rel="apple-touch-icon"
-					sizes="180x180"
-					href="/apple-touch-icon.png"
-				/>
-				<link
-					rel="icon"
-					type="image/png"
-					sizes="32x32"
-					href="/favicon-32x32.png"
-				/>
-				<link
-					rel="icon"
-					type="image/png"
-					sizes="16x16"
-					href="/favicon-16x16.png"
-				/>
-				<link rel="manifest" href="/site.webmanifest" />
-				<link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5" />
 				<meta name="msapplication-TileColor" content="#0a0014" />
-				<meta name="msapplication-TileImage" content="/mstile-144x144.png" />
+				<meta
+					name="msapplication-TileImage"
+					content="favicon/mstile-144x144.png"
+				/>
 				<meta name="theme-color" content="#ffffff" />
+				<meta name="msapplication-config" content="favicon/browserconfig.xml" />
 
-				{/* {favicons.map((linkProps) => (
+				{favicons.map((linkProps) => (
 					<link key={linkProps.href} {...linkProps} />
-				))} */}
+				))}
 			</Head>
 		</div>
 	);
@@ -142,8 +126,8 @@ const favicons: Array<Favicons> = [
 	{
 		rel: "icon",
 		type: "image/png",
-		sizes: "192x192",
-		href: "/favicon/android-chrome-512x512.png",
+		sizes: "384x384",
+		href: "/favicon/android-chrome-384x384.png",
 	},
 	{
 		rel: "icon",
