@@ -11,7 +11,7 @@ html[data-theme="light"] {
 
 html[data-theme="dark"] {
 	--themeBg: #0a0014;
-	--themeBgText: rgba(14, 0, 29, 0.61);
+	--themeBgText: #0e001d9c;
 	--head-primary: #ffffff;
 	--navLink: #94a3b8;
 	--spotifyBorder: #7a869781;
