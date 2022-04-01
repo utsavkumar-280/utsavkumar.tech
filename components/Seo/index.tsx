@@ -10,7 +10,7 @@ const Seo = ({ title }: { title?: String }) => {
 		description:
 			"The online portfolio website of Utsav kumar. Showcase of my projects, blogs and web development journey.",
 		url: "https://utsavkumar.tech",
-		image: "https://utsavkumar.tech/ogMain.png",
+		image: "https://cinequiz.vercel.app/favicon/cinema-og.png",
 		type: "website",
 		robots: "follow, index",
 	};
