@@ -2,7 +2,7 @@ import React from "react";
 import Head from "next/head";
 import { useRouter } from "next/router";
 
-const Seo = ({ title }: { title?: String }) => {
+const Seo = () => {
 	const router = useRouter();
 	const defaultMeta = {
 		title: "Utsav Kumar",
@@ -16,44 +16,37 @@ const Seo = ({ title }: { title?: String }) => {
 	};
 
 	return (
-		<div>
-			<Head>
-				<title>
-					{title ? `${title} | ${defaultMeta.title}` : defaultMeta.title}
-				</title>
-				<meta name="robots" content={defaultMeta.robots} />
-				<meta content={defaultMeta.description} name="description" />
-				<meta
-					property="og:url"
-					content={`${defaultMeta.url}${router.asPath}`}
-				/>
-				<link rel="canonical" href={`${defaultMeta.url}${router.asPath}`} />
+		<Head>
+			<title>Utsav </title>
+			<meta name="robots" content={defaultMeta.robots} />
+			<meta content={defaultMeta.description} name="description" />
+			<meta property="og:url" content={`${defaultMeta.url}${router.asPath}`} />
+			<link rel="canonical" href={`${defaultMeta.url}${router.asPath}`} />
 
-				<meta property="og:type" content={defaultMeta.type} />
-				<meta property="og:site_name" content={defaultMeta.siteName} />
-				<meta property="og:description" content={defaultMeta.description} />
-				<meta property="og:title" content={defaultMeta.title} />
-				<meta name="image" property="og:image" content={defaultMeta.image} />
+			<meta property="og:type" content={defaultMeta.type} />
+			<meta property="og:site_name" content={defaultMeta.siteName} />
+			<meta property="og:description" content={defaultMeta.description} />
+			<meta property="og:title" content={defaultMeta.title} />
+			<meta name="image" property="og:image" content={defaultMeta.image} />
 
-				<meta name="twitter:card" content="summary_large_image" />
-				<meta name="twitter:site" content="@utsavkumar280" />
-				<meta name="twitter:title" content={defaultMeta.title} />
-				<meta name="twitter:description" content={defaultMeta.description} />
-				<meta name="twitter:image" content={defaultMeta.image} />
+			<meta name="twitter:card" content="summary_large_image" />
+			<meta name="twitter:site" content="@utsavkumar280" />
+			<meta name="twitter:title" content={defaultMeta.title} />
+			<meta name="twitter:description" content={defaultMeta.description} />
+			<meta name="twitter:image" content={defaultMeta.image} />
 
-				<meta name="msapplication-TileColor" content="#0a0014" />
-				<meta
-					name="msapplication-TileImage"
-					content="favicon/mstile-144x144.png"
-				/>
-				<meta name="theme-color" content="#ffffff" />
-				<meta name="msapplication-config" content="favicon/browserconfig.xml" />
+			<meta name="msapplication-TileColor" content="#0a0014" />
+			<meta
+				name="msapplication-TileImage"
+				content="favicon/mstile-144x144.png"
+			/>
+			<meta name="theme-color" content="#ffffff" />
+			<meta name="msapplication-config" content="favicon/browserconfig.xml" />
 
-				{favicons.map((linkProps) => (
-					<link key={linkProps.href} {...linkProps} />
-				))}
-			</Head>
-		</div>
+			{favicons.map((linkProps) => (
+				<link key={linkProps.href} {...linkProps} />
+			))}
+		</Head>
 	);
 };
 

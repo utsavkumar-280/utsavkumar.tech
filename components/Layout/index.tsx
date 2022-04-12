@@ -3,6 +3,7 @@ import { useRouter } from "next/router";
 
 import Header from "../Header";
 import Footer from "../Footer";
+import Seo from "../Seo";
 
 const Layout = ({ children }: { children: React.ReactNode }) => {
 	const [mounted, setMounted] = useState(false);
@@ -18,6 +19,7 @@ const Layout = ({ children }: { children: React.ReactNode }) => {
 	if (!mounted) return null;
 	return (
 		<div className="min-h-screen w-full flex justify-center font-poppins bg-themeBg transition-colors ease-in-out  duration-[250ms] z-0">
+			<Seo />
 			<div className="flex flex-col 2xl:w-7/12 xl:w-8/12  md:w-10/12 sm:w-[90%] w-[92.5%] z-10">
 				<div className="w-full flex flex-col justify-start">
 					<Header />

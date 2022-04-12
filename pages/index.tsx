@@ -4,7 +4,6 @@ import Seo from "../components/Seo";
 const Home = () => {
 	return (
 		<>
-			<Seo />
 			<main className=" w-full xl:min-h-[calc(100vh-105px)] lg:min-h-[calc(100vh-96px)] sm:min-h-[calc(100vh-80px)] min-h-[calc(100vh-64px)] flex justify-center">
 				<section className="sm:w-[90%] w-[96%] flex flex-col justify-start ">
 					<div className=" lg:mt-40 md:mt-32  sm:mt-24 smer:mt-28 mt-24">
