@@ -1,11 +1,12 @@
 import Seo from "../../components/Seo";
 import Link from "next/link";
 import Image from "next/image";
-import { projectData } from "./data";
+import { projectData } from "../../utils/data";
 
 const Projects = () => {
 	return (
 		<>
+			<Seo title="Projects" />
 			<main className=" w-full xl:min-h-[calc(100vh-105px)] lg:min-h-[calc(100vh-96px)] sm:min-h-[calc(100vh-80px)] min-h-[calc(100vh-64px)] flex justify-center">
 				<section className="sm:w-[90%] w-[96%] flex flex-col justify-start ">
 					<div className=" lg:mt-28 md:mt-16  sm:mt-14 smer:mt-12 mt-8 mb-6 ">

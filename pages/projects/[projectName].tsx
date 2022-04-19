@@ -1,6 +1,6 @@
 import { useRouter } from "next/router";
 import Image from "next/image";
-import { projectData } from "./data";
+import { projectData } from "../../utils/data";
 
 const Project = () => {
 	const { query } = useRouter();

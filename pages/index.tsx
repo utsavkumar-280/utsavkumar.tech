@@ -27,19 +27,19 @@ const Home = () => {
 						</p>
 						<p className="mt-4 text-navLink tracking-wide md:text-base text-sm">
 							View my{" "}
-							<span className="bg-cardBorder text-navLink rounded-md my-1 mr-2 p-[0.125rem] px-3  transition-all ease-in-out">
+							<span className="bg-cardBorder text-navLink rounded-md my-1 mr-2 p-[0.125rem] px-3  transition-all ease-in-out hover:text-headPrimary">
 								<Link href="/projects">
 									<a>Projects</a>
 								</Link>
 							</span>
 							,{" "}
-							<span className="bg-cardBorder text-navLink rounded-md my-1 mr-2 p-[0.125rem] px-3  transition-all ease-in-out">
+							<span className="bg-cardBorder text-navLink rounded-md my-1 mr-2 p-[0.125rem] px-3  transition-all ease-in-out hover:text-headPrimary">
 								<Link href="/blog">
 									<a>Blogs</a>
 								</Link>
 							</span>{" "}
 							or send me an email at{" "}
-							<span className="bg-cardBorder text-navLink rounded-md my-1 mr-2 p-[0.125rem] px-3  transition-all ease-in-out">
+							<span className="bg-cardBorder text-navLink rounded-md my-1 mr-2 p-[0.125rem] px-3  transition-all ease-in-out hover:text-headPrimary">
 								<a href="mailto:utsavkumar280@gmail.com">
 									utsavkumar280@gmail.com
 								</a>

@@ -2,12 +2,12 @@ import React from "react";
 import Head from "next/head";
 import { useRouter } from "next/router";
 
-const Seo = () => {
+const Seo = ({ title }: { title?: string }) => {
 	const router = useRouter();
 
 	console.log(router);
 	const defaultMeta = {
-		title: "Utsav Kumar",
+		mainTitle: "Utsav Kumar",
 		siteName: "utsavkumar.tech",
 		description:
 			"The online portfolio website of Utsav kumar. Showcase of my projects, blogs and web development journey.",
@@ -17,9 +17,13 @@ const Seo = () => {
 		robots: "follow, index",
 	};
 
+	const pageTitle = title
+		? `${title} | ${defaultMeta.mainTitle}`
+		: defaultMeta.mainTitle;
+
 	return (
 		<Head>
-			<title>Utsav</title>
+			<title>{pageTitle} </title>
 			<meta name="robots" content={defaultMeta.robots} />
 			<meta content={defaultMeta.description} name="description" />
 			<meta property="og:url" content={`${defaultMeta.url}${router.asPath}`} />
@@ -28,12 +32,12 @@ const Seo = () => {
 			<meta property="og:type" content={defaultMeta.type} />
 			<meta property="og:site_name" content={defaultMeta.siteName} />
 			<meta property="og:description" content={defaultMeta.description} />
-			<meta property="og:title" content={defaultMeta.title} />
+			<meta property="og:title" content={pageTitle} />
 			<meta name="image" property="og:image" content={defaultMeta.image} />
 
 			<meta name="twitter:card" content="summary_large_image" />
 			<meta name="twitter:site" content="@utsavkumar280" />
-			<meta name="twitter:title" content={defaultMeta.title} />
+			<meta name="twitter:title" content={pageTitle} />
 			<meta name="twitter:description" content={defaultMeta.description} />
 			<meta name="twitter:image" content={defaultMeta.image} />
 

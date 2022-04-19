@@ -1,12 +1,12 @@
-import Layout from "../../components/Layout";
 import Seo from "../../components/Seo";
 import Link from "next/link";
 import Image from "next/image";
-import { blogData } from "./data";
+import { blogData } from "../../utils/data";
 
 const Blog = () => {
 	return (
 		<>
+			<Seo title="Blogs" />
 			<main className=" w-full xl:min-h-[calc(100vh-105px)] lg:min-h-[calc(100vh-96px)] sm:min-h-[calc(100vh-80px)] min-h-[calc(100vh-64px)] flex justify-center">
 				<section className="sm:w-[90%] w-[96%] flex flex-col justify-start ">
 					<div className=" lg:mt-28 md:mt-16  sm:mt-14 smer:mt-12 mt-8 mb-6">
