@@ -18,6 +18,7 @@ module.exports = {
 				headPrimary: "var(--head-primary)",
 				navLink: "var(--navLink)",
 				spotifyBorder: "var(--spotifyBorder)",
+				cardBorder: "var(--cardBorder)",
 			},
 		},
 		screens: {

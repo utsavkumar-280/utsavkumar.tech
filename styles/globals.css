@@ -7,6 +7,7 @@ html[data-theme="light"] {
 	--head-primary: #000000;
 	--navLink: #334155;
 	--spotifyBorder: rgba(51, 65, 85, 0.288);
+	--cardBorder: #e2e8f0;
 }
 
 html[data-theme="dark"] {
@@ -15,6 +16,7 @@ html[data-theme="dark"] {
 	--head-primary: #ffffff;
 	--navLink: #94a3b8;
 	--spotifyBorder: #7a869781;
+	--cardBorder: #1e293b;
 }
 
 @tailwind base;
