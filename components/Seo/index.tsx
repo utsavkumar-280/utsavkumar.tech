@@ -4,20 +4,22 @@ import { useRouter } from "next/router";
 
 const Seo = () => {
 	const router = useRouter();
+
+	console.log(router);
 	const defaultMeta = {
 		title: "Utsav Kumar",
 		siteName: "utsavkumar.tech",
 		description:
 			"The online portfolio website of Utsav kumar. Showcase of my projects, blogs and web development journey.",
 		url: "https://utsavkumar.tech",
-		image: "https://utsavkumar.tech/favicon/ogMain.png",
+		image: "/assets/ogMain.png",
 		type: "website",
 		robots: "follow, index",
 	};
 
 	return (
 		<Head>
-			<title>Utsav </title>
+			<title>Utsav</title>
 			<meta name="robots" content={defaultMeta.robots} />
 			<meta content={defaultMeta.description} name="description" />
 			<meta property="og:url" content={`${defaultMeta.url}${router.asPath}`} />
@@ -36,16 +38,13 @@ const Seo = () => {
 			<meta name="twitter:image" content={defaultMeta.image} />
 
 			<meta name="msapplication-TileColor" content="#0a0014" />
-			<meta
-				name="msapplication-TileImage"
-				content="favicon/mstile-144x144.png"
-			/>
+			<meta name="msapplication-TileImage" content="/mstile-144x144.png" />
 			<meta name="theme-color" content="#ffffff" />
-			<meta name="msapplication-config" content="favicon/browserconfig.xml" />
+			<meta name="msapplication-config" content="/browserconfig.xml" />
 
-			{favicons.map((linkProps) => (
+			{/* {favicons.map((linkProps) => (
 				<link key={linkProps.href} {...linkProps} />
-			))}
+			))} */}
 		</Head>
 	);
 };

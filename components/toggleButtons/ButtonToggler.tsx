@@ -15,13 +15,6 @@ const ButtonToggler = () => {
 		}
 	};
 
-	console.log({ theme, resolvedTheme });
-
-	// const [mounted, setMounted] = useState(false);
-	// useEffect(() => setMounted(true), []);
-
-	// if (!mounted) return null;
-
 	return (
 		<button
 			className="mx-5 transition-colors ease-in-out  duration-[250ms]"

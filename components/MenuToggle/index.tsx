@@ -41,7 +41,6 @@ const sideVariants = {
 const MenuToggle = () => {
 	const [isOpen, cycleOpen] = useCycle(false, true);
 	const { asPath } = useRouter();
-	console.log({ asPath });
 
 	return (
 		<motion.main>

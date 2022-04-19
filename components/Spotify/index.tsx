@@ -17,8 +17,6 @@ export default function Spotify() {
 	const response = useSWR<SpotifyData>("/api/spotify", fetcher);
 	const { data } = response;
 
-	console.log({ response });
-
 	return data?.isPlaying ? (
 		<a
 			target="_blank"
