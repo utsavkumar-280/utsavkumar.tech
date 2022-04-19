@@ -4,6 +4,7 @@ import Seo from "../components/Seo";
 const Home = () => {
 	return (
 		<>
+			<Seo />
 			<main className=" w-full xl:min-h-[calc(100vh-105px)] lg:min-h-[calc(100vh-96px)] sm:min-h-[calc(100vh-80px)] min-h-[calc(100vh-64px)] flex justify-center">
 				<section className="sm:w-[90%] w-[96%] flex flex-col justify-start ">
 					<div className=" lg:mt-40 md:mt-32  sm:mt-24 smer:mt-28 mt-24">
@@ -25,14 +26,35 @@ const Home = () => {
 							you get the point.
 						</p>
 						<p className="mt-4 text-navLink tracking-wide md:text-base text-sm">
-							View my Projects, Blogs or send me an email at
-							utsavkumar280@gmail.com
+							View my{" "}
+							<span className="bg-cardBorder text-navLink rounded-md my-1 mr-2 p-[0.125rem] px-3  transition-all ease-in-out">
+								<Link href="/projects">
+									<a>Projects</a>
+								</Link>
+							</span>
+							,{" "}
+							<span className="bg-cardBorder text-navLink rounded-md my-1 mr-2 p-[0.125rem] px-3  transition-all ease-in-out">
+								<Link href="/blog">
+									<a>Blogs</a>
+								</Link>
+							</span>{" "}
+							or send me an email at{" "}
+							<span className="bg-cardBorder text-navLink rounded-md my-1 mr-2 p-[0.125rem] px-3  transition-all ease-in-out">
+								<a href="mailto:utsavkumar280@gmail.com">
+									utsavkumar280@gmail.com
+								</a>
+							</span>
 						</p>
 					</div>
 
-					<div className="mt-10">
+					{/* <div className="mt-10">
 						<Link href="/about">
-							<a>See more about me</a>
+							<a>See more about me →</a>
+						</Link>
+					</div> */}
+					<div className="mt-10 text-navLink hover:text-headPrimary hover:underline transition-all ease-in-out">
+						<Link href="/projects">
+							<a>Checkout my projects →</a>
 						</Link>
 					</div>
 				</section>

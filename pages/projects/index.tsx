@@ -45,7 +45,7 @@ const Projects = () => {
 										</div>
 									))}
 								</div>
-								<div className="mt-4 mb-2 hover:underline text-headPrimary">
+								<div className="mt-4 mb-2 hover:underline text-headPrimary transition-all ease-in-out">
 									<Link href={`/projects/${project.route}`}>
 										<a>See more →</a>
 									</Link>
@@ -53,6 +53,11 @@ const Projects = () => {
 							</div>
 						))}
 					</section>
+					<div className="mt-10 text-navLink hover:text-headPrimary hover:underline transition-all ease-in-out">
+						<Link href="/blog">
+							<a>Checkout my blogs →</a>
+						</Link>
+					</div>
 				</section>
 			</main>
 		</>

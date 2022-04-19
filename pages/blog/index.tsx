@@ -49,6 +49,11 @@ const Blog = () => {
 							</div>
 						))}
 					</section>
+					<div className="mt-10 text-navLink hover:text-headPrimary hover:underline transition-all ease-in-out">
+						<Link href="/projects">
+							<a>Checkout my projects →</a>
+						</Link>
+					</div>
 				</section>
 			</main>
 		</>
