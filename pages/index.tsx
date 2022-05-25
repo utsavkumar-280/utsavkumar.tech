@@ -25,9 +25,9 @@ const Home = () => {
 							I&apos;ve learned, things that I want to share, yadda yadda yadda
 							you get the point.
 						</p>
-						<p className="mt-4 text-navLink tracking-wide md:text-base text-sm">
+						<p className="mt-4 text-navLink tracking-wide md:text-base md:leading-loose text-sm leading-loose">
 							View my{" "}
-							<span className="bg-cardBorder text-navLink rounded-md my-1 mr-2 p-[0.125rem] px-3  transition-all ease-in-out hover:text-headPrimary">
+							<span className="bg-cardBorder text-navLink rounded-md my-5 mr-2 p-[0.125rem] px-3  transition-all ease-in-out hover:text-headPrimary ">
 								<Link href="/projects">
 									<a>Projects</a>
 								</Link>
